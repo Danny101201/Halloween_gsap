@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section id="screen">
+        <img src="./img/bg.jpg" id="bg" alt="">
+        <img src="./img/bats.png" id="bats" alt="">
+        <img src="./img/castle.png" id="castle" alt="">
+        <img src="./img/wolf.png" id="wolf" alt="">
+        <img src="./img/img.png" id="img" alt="">
+    </section>
+    <div class="sec">
+        <div class="content">
+            <h2>Happy Halloween </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea delectus expedita dicta provident, quia
+                nesciunt accusantium error accusamus. Illo cumque consectetur doloribus, dolorum molestiae vitae
+                repellat ad ullam cum cupiditate numquam architecto eius molestias libero alias non perferendis. Sit
+                voluptate qui fugit, possimus vitae odit consequatur cum dolore obcaecati excepturi enim voluptatem eum
+                ab magnam suscipit incidunt molestias quisquam vero minima nobis officiis? Ipsam voluptatem debitis,
+                laudantium saepe velit laborum praesentium. Iusto eos voluptas autem laudantium qui enim totam tenetur
+                ut ipsa nisi nobis, alias expedita fuga veritatis iste voluptatibus minus nesciunt pariatur, itaque
+                corrupti iure! Doloremque similique et illo veniam minus, cumque quos culpa unde nulla autem porro
+                facilis temporibus impedit quisquam eum aperiam. Provident, quos nam. Culpa, enim assumenda. Inventore,
+                optio perferendis architecto doloremque iure aliquam earum sapiente. Culpa sint ab veritatis non earum.
+                Animi necessitatibus quam, sapiente aut doloremque voluptatem amet deserunt harum commodi aliquam iusto
+                atque incidunt. Ipsam, inventore dicta nostrum officia doloribus nam suscipit eligendi. Necessitatibus
+                esse cum ex sequi impedit dolor eaque! Quisquam vitae earum distinctio accusamus explicabo quas
+                incidunt, natus nemo ad id corrupti aliquid beatae numquam placeat itaque asperiores nostrum
+                necessitatibus odio impedit magnam corporis officiis cum. Ratione minus reiciendis tenetur vitae aliquam
+                debitis quasi! Culpa animi itaque aut ratione vero earum pariatur et omnis qui in, sunt incidunt eum
+                voluptates ipsa, quaerat accusamus quas! Veniam, non facilis laboriosam deserunt eius alias accusamus ea
+                harum nemo. Ad laboriosam ipsum quae quaerat maiores voluptas debitis, a vel iusto officiis delectus
+                asperiores voluptate quidem placeat esse sequi deleniti repellat quod exercitationem illo consectetur!
+                Dolor itaque doloremque sunt quam est quas expedita dolorum eveniet atque harum consequatur nobis
+                laboriosam placeat, saepe obcaecati enim dignissimos nesciunt eum in qui vel quo ratione. Nam facere,
+                eius dicta hic, repellat, exercitationem possimus provident cupiditate similique fuga adipisci?</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script>
+        let st = ScrollTrigger.create({
+            trigger: '#screen',
+            start: 'top top',
+            pin: true,
+            // pinSpacing: true,
+        })
+        gsap.to('#img', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: 1500,
+            y: 500,
+        })
+        gsap.to('#wolf', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: -500,
+        })
+        gsap.to('#castle', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: -100,
+        })
+        gsap.to('#bats', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 0.8
+        })
+        gsap.to('#bg', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 1.2
+        })
+
+    </script>
+
+</body>
+
+</html>
